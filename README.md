@@ -10,7 +10,7 @@ _This contains buttons and related scripts if you want to export updateset from 
 
 ### Usage
 
-- Installing the updateset adds two buttons called **'Export to XML (Name)'** (one for form view and one for list view).
+- Installing the updateset adds two buttons called **'Export to XML (Name)'** (one for form view and the other for list view).
 - Use the button (list choice action) in list view of updatesets table if you want to download multiple updatesets.
 - Use the related link in the updateset form if you want to download a single updateset.
   
