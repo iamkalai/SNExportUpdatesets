@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2020-06-11 13:31:45">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Export Updateset With Name-2.0</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>e11aa09e1b1dd8d08ed631d7dc4bcb1c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-06-11 13:31:44</sys_created_on>
+<sys_id>5a2d60121b5dd8d08ed631d7dc4bcb2a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-06-11 13:31:44</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_b9a509a5db49a340d8ccd421cf961907</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.ExportWithRelatedListsCustom&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Customized copy of ExportWithRelatedLists&lt;/description&gt;&lt;name&gt;ExportWithRelatedListsCustom&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var ExportWithRelatedListsCustom = Class.create();
+
+ExportWithRelatedListsCustom.prototype = Object.extendsObject(ExportWithRelatedLists,{
+	initialize: function(parent_table, sys_id, name){
+		this.parent_table = parent_table;
+		this.sys_id = sys_id;
+		this.us_name = name;
+		this.related_lists = [];
+		this.query_sets = [];
+	},
+	
+	getFileName: function(){
+		return (this.us_name + '.xml');
+	},
+	
+	
+});
+
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-09 08:34:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;b9a509a5db49a340d8ccd421cf961907&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ExportWithRelatedListsCustom&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b9a509a5db49a340d8ccd421cf961907&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-09 08:34:08&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-478246574</payload_hash>
+<remote_update_set display_value="Export Updateset With Name-2.0">5a2d60121b5dd8d08ed631d7dc4bcb2a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-06-11 13:31:44</sys_created_on>
+<sys_id>122d60121b5dd8d08ed631d7dc4bcb2b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16657f641820000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-06-11 13:31:44</sys_updated_on>
+<table/>
+<target_name>ExportWithRelatedListsCustom</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>35a509a5c149a3409f432b0b56670c0a</update_guid>
+<update_guid_history>35a509a5c149a3409f432b0b56670c0a:-478246574</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_processor_78a54d65db49a340d8ccd421cf9619c9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_processor"&gt;&lt;sys_processor action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;description&gt;Customized copy of ExportUpdateSet&lt;/description&gt;&lt;interactive&gt;false&lt;/interactive&gt;&lt;name&gt;ExportUpdateSetCustom&lt;/name&gt;&lt;parameters/&gt;&lt;params_endpoint/&gt;&lt;path&gt;export_update_set_custom&lt;/path&gt;&lt;path_endpoint/&gt;&lt;require_csrf&gt;false&lt;/require_csrf&gt;&lt;roles&gt;snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[var sysid = g_request.getParameter('sysparm_sys_id');
+
+var usl = new GlideRecord("sys_update_set");
+usl.addQuery("sys_id", sysid);
+usl.setLimit(1);
+usl.query();
+if (usl.next()) {
+
+    var name = usl.getValue('name');
+    var updateSetExport = new UpdateSetExport();
+    var remoteSysID = updateSetExport.exportUpdateSet(usl);
+
+    var exporter = new ExportWithRelatedListsCustom('sys_remote_update_set', remoteSysID, name);
+    exporter.addRelatedList('sys_update_xml', 'remote_update_set');
+    exporter.exportRecords(g_response);
+
+    var remoteUSL = new GlideRecord("sys_remote_update_set");
+    remoteUSL.addQuery("sys_id", remoteSysID);
+    remoteUSL.setLimit(1);
+    remoteUSL.query();
+    if (remoteUSL.next()) {
+        remoteUSL.deleteRecord();
+    }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_processor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-09 08:34:04&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;78a54d65db49a340d8ccd421cf9619c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;ExportUpdateSetCustom&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_processor_78a54d65db49a340d8ccd421cf9619c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-06-11 13:03:29&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1695268919</payload_hash>
+<remote_update_set display_value="Export Updateset With Name-2.0">5a2d60121b5dd8d08ed631d7dc4bcb2a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-06-11 13:31:44</sys_created_on>
+<sys_id>5e2d60121b5dd8d08ed631d7dc4bcb2a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>172a37a6d8a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-06-11 13:31:44</sys_updated_on>
+<table/>
+<target_name>ExportUpdateSetCustom</target_name>
+<type>Processor</type>
+<update_domain>global</update_domain>
+<update_guid>50b6e8d65f1dd8d0a6be3073fbe58869</update_guid>
+<update_guid_history>50b6e8d65f1dd8d0a6be3073fbe58869:1695268919,8696acd6001dd8d0fd48483ba3610647:-1132120489,6f85e4d29d1dd8d0cf3bf3c08a52cc34:1695268919,2d83ac92b71dd8d01b3408a8e448fc4d:-2101844633,7ca54d650b49a34088fa2921240049ca:1297516726</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_c7a545a5db49a340d8ccd421cf96191d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;export_xml_name&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;current.state == 'complete' &amp;amp;&amp;amp; current.base_update_set.nil()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint&gt;Create a Retrieved Update Set for exporting&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Export to XML (Name)&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[action.setRedirectURL("export_update_set_custom.do?sysparm_sys_id=" + current.getValue('sys_id'));]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-09 08:34:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c7a545a5db49a340d8ccd421cf96191d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Export to XML (Name)&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_c7a545a5db49a340d8ccd421cf96191d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-06-11 13:21:19&lt;/sys_updated_on&gt;&lt;table&gt;sys_update_set&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-153902692</payload_hash>
+<remote_update_set display_value="Export Updateset With Name-2.0">5a2d60121b5dd8d08ed631d7dc4bcb2a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-06-11 13:31:44</sys_created_on>
+<sys_id>962d60121b5dd8d08ed631d7dc4bcb2b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>172a38ac38e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-06-11 13:31:44</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Export to XML (Name)</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>3dca2c9e2b1dd8d0307de5a577ca80ee</update_guid>
+<update_guid_history>3dca2c9e2b1dd8d0307de5a577ca80ee:-153902692,4f913f7d7a5d58d06a48a40b52e7f9b5:-894050699,03a545a5d849a340dc6ee1f7d5b0621f:-744512098</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_c138e89a1b1dd8d08ed631d7dc4bcbcd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;export_xml_list_with_name&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;current.state == 'complete' &amp;amp;&amp;amp; current.base_update_set.nil()&lt;/condition&gt;&lt;form_action&gt;false&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint&gt;Create a Retrieved Update Set for exporting&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Export to XML (Name)&lt;/name&gt;&lt;onclick&gt;exportUpdatesetList()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function exportUpdatesetList() {
+    var ids = (g_list.getChecked()).split(',');
+
+    for (var i = 0; i &lt; ids.length; i++) {
+        g_navigation.openPopup("export_update_set_custom.do?sysparm_sys_id=" + ids[i]);
+    }
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-06-11 13:10:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c138e89a1b1dd8d08ed631d7dc4bcbcd&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Export to XML (Name)&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_c138e89a1b1dd8d08ed631d7dc4bcbcd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-06-11 13:23:12&lt;/sys_updated_on&gt;&lt;table&gt;sys_update_set&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1409824162</payload_hash>
+<remote_update_set display_value="Export Updateset With Name-2.0">5a2d60121b5dd8d08ed631d7dc4bcb2a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-06-11 13:31:44</sys_created_on>
+<sys_id>d22d60121b5dd8d08ed631d7dc4bcb2b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>172a38c7b3b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-06-11 13:31:44</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Export to XML (Name)</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>9d3b2412af5dd8d06e98411752937bca</update_guid>
+<update_guid_history>9d3b2412af5dd8d06e98411752937bca:1409824162,9809ecda7f1dd8d0f8855954c886009e:1299297853,4d38e89a221dd8d031399ffec01d12ce:-1108580205</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
